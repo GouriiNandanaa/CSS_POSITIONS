@@ -1,0 +1,6 @@
+box model
+  margin
+  border 
+  padding 
+  element
+      

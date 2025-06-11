@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>floating columns</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden; /* to clear floats */
+  }
+
+  .box {
+    width: 23%;
+    float: left;
+    margin: 1%;
+    background-color: #723434;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+  .content {
+    /* background-color: white; */
+    margin-top: 20px;
+    padding: 20px;
+    clear: both;
+  }
+
+  section, aside{
+    width: 40%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    background-color: #ddf; 
+  }
+
+  .columns{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+
+  </style> 
+</head>  
+<body>          
+  <div class="container">
+    <div class="box"> 
+      <h3>Service 1</h3> 
+      <p>this is service 1</p>
+    </div>
+    <div class="box"> 
+      <h3>Service 1</h3>
+      <p>this is service 2</p>
+    </div>
+    <div class="box"> 
+      <h3>Service 1</h3>
+      <p>this is service 3</p>
+    </div>
+    <div class="box"> 
+      <h3>Service 1</h3>
+      <p>this is service 4</p>
+    </div>
+
+    <div class="content">
+      <h3>Content</h3>
+      <p>
+        In gravida ligula nec thangs. The bizzle gangsta. Etiam tempizzle. Mofo mi nizzle imperdiet vehicula... Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi molestias maxime provident sunt itaque aspernatur nam ad! Totam blanditiis beatae fuga incidunt maxime asperiores deleniti quis eaque. Nam, est.
+      </p>
+    </div>
+    <div class="columns">
+      <section>
+        <h2>This is column 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam ex laboriosam debitis fugiat dolorem deserunt sequi unde recusandae voluptates adipisci, quisquam officiis nobis aliquid quasi voluptate ipsa minima architecto!Lor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, incidunt aliquid culpa tempore dolores fugiat odit sed eligendi impedit mollitia hic suscipit ipsam laborum excepturi corrupti modi voluptatibus. Tempora, hic.</p>
+      </section>
+      <aside>
+        <h2>This is column 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam ex laboriosam debitis fugiat dolorem deserunt sequi unde recusandae voluptates adipisci, quisquam officiis nobis aliquid quasi voluptate ipsa minima architecto!Lor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, incidunt aliquid culpa tempore dolores fugiat odit sed eligendi impedit mollitia hic suscipit ipsam laborum excepturi corrupti modi voluptatibus. Tempora, hic.</p>
+
+        <img src="../cloud.jpeg" alt="cloud" width="100%">
+      </aside>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
+
+
+<!--okay here we are going to discuss about the aside and section
+
+simple text in both of them looks similar
+
+if we want to have 2 sections of the text then we can use that
+
+
+
+
+-->

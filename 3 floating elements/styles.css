@@ -19,10 +19,12 @@ body{
   content: "";
   display: block;
   clear: both;
+
 }
 
+/*       */
 img{
-  float: top;
+  float: left;
   margin: 10px;
 }
 
@@ -43,3 +45,20 @@ img{
   height: 100px;
   width: 100px;
 }
+
+
+/* 
+after the float there can be margin for the next element
+
+so add a new code of empty div
+but thats an additional wastage of space 
+
+do :: after
+.wrapper:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+*/

@@ -1,35 +1,45 @@
-body{
-  background: #eee;
+p{
+  padding: 20px;
+  background-color: #eee;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.4em;
 }
-
+body{
+  background-color: #eee;
+}
+/*  */
 .wrapper{
-  background: #fff;
+  background-color: #fff;
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-}
+} 
 
 .wrapper:after{
-  content: "";
+  content: ".";
   display: block;
   clear: both;
-}   
-
-
+}
+/* 
 img{
-  
-  float: left;
+  float: top;
+  margin: 10px;
 }
 
-/* 
-it lets us position an element to the very left and very right of a parent element
+.red{
+  background-color: red;
+}
 
-it removes itself from the normal document flow
+.green{
+  background-color: green;
+}
 
-initially to wrap a text around an image 
-but now used for many other purposes
+.blue{
+  background-color: blue;
+  float: right;
+}
 
-make text columns
-grid galleries etc
-
-*/
+.box{
+  height: 100px;
+  width: 100px;
+} */
