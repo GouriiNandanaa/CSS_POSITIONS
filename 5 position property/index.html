@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden; /* to clear floats */
+    }
+
+    .box {
+      width: 23%;
+      float: left;
+      margin: 1%;
+      background-color: #723434;
+      text-align: center;
+      padding: 20px 0;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    .content {
+      margin-top: 20px;
+      padding: 20px;
+      clear: both;
+      background-color: #fff;
+    }
+
+    .content p {
+      -webkit-column-count: 3;
+      column-count: 3;
+      -webkit-column-gap: 30px;
+      column-gap: 30px;
+      -webkit-column-rule: 2px solid #888;
+      column-rule: 2px solid #888;
+    }
+
+    section, aside {
+      width: 40%;
+      padding: 1%;
+      margin: 1%;
+      float: left;
+      background-color: #ddf;
+      box-sizing: border-box;
+    }
+
+    .columns {
+      content: "";
+      display: block;
+      clear: both;
+      margin-top: 20px;
+    }
+
+    /* There are mainly 5 kinds of positioning:
+       1. static   - default position, follows normal document flow
+       2. relative - moves relative to its normal position
+       3. absolute - positioned relative to nearest positioned ancestor
+       4. fixed    - positioned relative to the browser window
+       5. inherit  - inherits the position value from its parent
+    */
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Four floating boxes -->
+    <div class="box">
+      <h3>Service 1</h3>
+      <p>this is service 1</p>
+    </div>
+    <div class="box">
+      <h3>Service 2</h3>
+      <p>this is service 2</p>
+    </div>
+    <div class="box">
+      <h3>Service 3</h3>
+      <p>this is service 3</p>
+    </div>
+    <div class="box">
+      <h3>Service 4</h3>
+      <p>this is service 4</p>
+    </div>
+
+    <!-- Multicolumn paragraph -->
+    <div class="content">
+      <h3>Content</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt repellendus distinctio optio quo nobis eum, qui corrupti perspiciatis ducimus provident voluptas consequatur ea quidem veniam omnis vitae recusandae, ipsum perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quos porro ab placeat quidem rerum molestiae eius vero quod incidunt, necessitatibus, repudiandae amet excepturi architecto facilis similique asperiores. Odio, rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, incidunt aliquid culpa tempore dolores fugiat odit sed eligendi impedit mollitia hic suscipit ipsam laborum excepturi corrupti modi voluptatibus. Tempora, hic.
+      </p>
+    </div>
+
+    <!-- Two column layout -->
+    <div class="columns">
+      <section>
+        <h2>This is column 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam ex laboriosam debitis fugiat dolorem deserunt sequi unde recusandae voluptates adipisci, quisquam officiis nobis aliquid quasi voluptate ipsa minima architecto!</p>
+      </section>
+
+      <aside>
+        <h2>This is column 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas possimus, pariatur recusandae quibusdam dolor nihil quo asperiores aliquam fuga neque veniam iste modi sed quod a odit vel?</p>
+        <img src="../cloud.jpeg" alt="cloud" width="100%">
+      </aside>
+    </div>
+
+  </div>
+</body>
+</html>
